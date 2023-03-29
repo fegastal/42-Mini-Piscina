@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Ex02</title>
+        <script src="./popup.js"></script>
+    </head>
+<body>
+    <form>
+        <div class="firstname">
+            <h1>Firstname =</h1>
+            <input type="text" id="firstname" name="firstname"><br><br>
+        </div>
+        <div class="name">
+            <h1>Name =</h1>
+            <input type="text" id="name" name="name"><br><br>
+        </div>
+        <div class="age">
+            <h1>Age =</h1>
+            <input type="number" id="age"><br><br>
+        </div>
+        <div class="Phone =">
+            <h1>Phone:</h1>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+        </div>
+        <div class="email">
+            <h1>Email =</h1>
+            <input type="email" id="email" name="email"><br><br>
+        </div>
+        <div class="student">
+            <h1>Student at 42?</h1>
+            <div>
+                <input type="checkbox" id="student" name="student" value="yes">
+                <label for="yes"></label>
+            </div>
+        </div>
+        <div class="gender">
+            <h1>Gender =</h1>
+            <input type="radio" id="gender_male" name="gender_male" value="Male">
+            <label for="gender_male">Male</label>
+            <input type="radio" id="gender_female" name="gender_female" value="Female">
+            <label for="gender_female">Female</label>
+            <input type="radio" id="gender_other" name="gender_other" value="Other">
+            <label for="gender_other">Other</label>
+        </div>
+        <div class="SubmissionButton">
+            <h1>Submission</h1>
+            <button onclick="displayFormContents()">Send</button>
+        </div>
+        </form>
+    </body>
+</html>
